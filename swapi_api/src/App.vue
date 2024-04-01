@@ -10,7 +10,7 @@ import { ref } from 'vue';
 export default{
   setup(){
     const people = ref("")
-    axios.get(" https://swapi.dev/api/people/1/")
+    axios.get(" https://swapi.dev/api/people/5/")
     .then(response =>{
       people.value = response.data
     })

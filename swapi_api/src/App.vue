@@ -1,6 +1,6 @@
 <template>
   <i>"{{people}}"</i>
-  <p>-Star wars character</p>
+  <p>-Star wars Character</p>
 </template>
 
 <script lang="ts">

@@ -3,22 +3,35 @@
   <p>-Star wars Character</p>
 </template>
 
-<script lang="ts">
-import axios from 'axios';
-import { ref } from 'vue';
+<script lang="ts" setup>
+import { ref, onMounted } from 'vue';
+import { fetchPeople } from '../connectors/peopleConnector';
 
-export default{
-  setup(){
-    const people = ref("")
-    axios.get(" https://swapi.dev/api/people/5/")
-    .then(response =>{
-      people.value = response.data
-    })
-    return{
-      people
-    }
+//onMounted(() => {
+//  people.value = fetchPeople(2)
+
+//} )
+
+onMounted(async() => {
+  try{
+    const costam = await fetchPeople(1)
+    console.log(costam);
+  }catch (error){
+    console.error('Wystąpił błąd podczas pobierania danych' , error)
   }
-}
+});
+
+// async function onMountedIpeple() {
+//   const costam = await fetchPeople(1)
+//   console.log(costam)
+// }
+// onMountedIpeple()
+
+
+
+
+const people = ref<any>("");
+
 
 </script>
 

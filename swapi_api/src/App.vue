@@ -8,13 +8,13 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue';
 import { fetchPeople } from '../connectors/peopleConnector';
+import IPeople from 'types/people';
 
-const people = ref<string | null>("");
+const people = ref<IPeople | null>();
 
 
 onMounted(async () => {
   const people.value = await fetchPeople(1);
-  console.log(people.value);
 });
 
 </script>

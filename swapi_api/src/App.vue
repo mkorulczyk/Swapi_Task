@@ -1,24 +1,21 @@
 <template>
-  <i>"{{people}}"</i>
-  <p>-Star wars Character</p>
+  <i>"{{ people }}"</i>
+  <p>
+    <router-link to="/">Home</router-link>
+  </p>
 </template>
 
-<script lang="ts">
-import axios from 'axios';
-import { ref } from 'vue';
+<script lang="ts" setup>
+import { ref, onMounted } from 'vue';
+import { fetchPeople } from '../connectors/peopleConnector';
 
-export default{
-  setup(){
-    const people = ref("")
-    axios.get(" https://swapi.dev/api/people/5/")
-    .then(response =>{
-      people.value = response.data
-    })
-    return{
-      people
-    }
-  }
-}
+const people = ref<string | null>("");
+
+
+onMounted(async () => {
+  const people.value = await fetchPeople(1);
+  console.log(people.value);
+});
 
 </script>
 

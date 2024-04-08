@@ -1,37 +1,21 @@
 <template>
-  <i>"{{people}}"</i>
-  <p>-Star wars Character</p>
+  <i>"{{ people }}"</i>
+  <p>
+    <router-link to="/">Home</router-link>
+  </p>
 </template>
 
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue';
 import { fetchPeople } from '../connectors/peopleConnector';
 
-//onMounted(() => {
-//  people.value = fetchPeople(2)
+const people = ref<string | null>("");
 
-//} )
 
-onMounted(async() => {
-  try{
-    const costam = await fetchPeople(1)
-    console.log(costam);
-  }catch (error){
-    console.error('Wystąpił błąd podczas pobierania danych' , error)
-  }
+onMounted(async () => {
+  const people.value = await fetchPeople(1);
+  console.log(people.value);
 });
-
-// async function onMountedIpeple() {
-//   const costam = await fetchPeople(1)
-//   console.log(costam)
-// }
-// onMountedIpeple()
-
-
-
-
-const people = ref<any>("");
-
 
 </script>
 

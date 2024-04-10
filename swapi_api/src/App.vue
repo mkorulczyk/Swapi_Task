@@ -14,7 +14,7 @@ const people = ref<IPeople | null>();
 
 
 onMounted(async () => {
-  const people.value = await fetchPeople(1);
+  people.value = await fetchPeople(1);
 });
 
 </script>

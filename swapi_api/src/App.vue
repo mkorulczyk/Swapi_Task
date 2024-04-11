@@ -12,7 +12,6 @@ import IPeople from 'types/people';
 
 const people = ref<IPeople | null>();
 
-
 onMounted(async () => {
   people.value = await fetchPeople(1);
 });

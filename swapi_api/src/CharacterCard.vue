@@ -1,9 +1,10 @@
 <template>
-    <dir class="character-card">
+    <div class="character-card">
         <h2>{{ IPeople.name }}</h2>
-    </dir>
+        <p><strong>Height:</strong>{{ IPeople.height }}</p>
+    </div>
 </template>
 <script lang="ts" setup>
-import IPeople from 'types/people'; 
+import IPeople from '../types/people'; 
 
 </script>

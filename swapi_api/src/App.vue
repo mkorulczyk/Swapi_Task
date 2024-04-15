@@ -9,7 +9,7 @@
 import { ref, onMounted } from 'vue';
 import { fetchPeople } from './connectors/peopleConnector';
 import IPeople from './types/people';
-import DefaultLayout from './Layout/DefaultLayout.vue'
+import DefaultLayout from './layouts/DefaultLayout.vue'
 
 
 const people = ref<IPeople | null>();

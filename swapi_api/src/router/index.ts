@@ -1,8 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 import MainPage from './modules/mainPage/MainPage.vue';
-import AppFooter from './Layout/componets/AppFooter.vue';
-import AppHeader from './Layout/componets/AppHeader.vue';
+import AppFooter from './layouts/componets/AppFooter.vue';
+import AppHeader from './layouts/componets/AppHeader.vue';
 
 const routes = [
     {
@@ -29,10 +29,3 @@ const router = createRouter({
 });
 
 export default router;
-// przenosci foldery
-// formatowanie
-// layout z prawdziwego zdarzenia
-// wywalic character card
-// nazwy branch 
-// nazwy comituw
-// pull request 

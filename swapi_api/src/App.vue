@@ -1,20 +1,21 @@
 <template>
-  <i>"{{ people }}"</i>
-  <p>
-    <router-link to="/">Home</router-link>
-  </p>
+  <div>
+    <DefaultLayout/>
+    <router-view />
+  </div>
 </template>
 
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue';
-import { fetchPeople } from '../connectors/peopleConnector';
-import IPeople from 'types/people';
+import { fetchPeople } from './connectors/peopleConnector';
+import IPeople from './types/people';
+import DefaultLayout from './layouts/DefaultLayout.vue'
+
 
 const people = ref<IPeople | null>();
 
-
 onMounted(async () => {
-  people.value = await fetchPeople(1);
+  people.value = await fetchPeople(1); 
 });
 
 </script>
@@ -28,4 +29,4 @@ onMounted(async () => {
   color: #2c3e50;
   margin-top: 60px;
 }
-</style>
+</style>@/types/people./connectors/peopleConnector

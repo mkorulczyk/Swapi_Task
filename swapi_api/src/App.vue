@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div v-if="pepoleData">
+    <h2>{{ peopleData.name }}</h2>
     <DefaultLayout/>
     <router-view />
   </div>
@@ -10,7 +11,8 @@ import { ref, onMounted } from 'vue';
 import { fetchPeople } from './connectors/peopleConnector';
 import IPeople from './types/people';
 import DefaultLayout from './layouts/DefaultLayout.vue'
-
+import pepoleData from '../src/modules/mainPage/characterDetails/character.vue'
+import peopleData from './modules/mainPage/characterDetails/character';
 
 const people = ref<IPeople | null>();
 

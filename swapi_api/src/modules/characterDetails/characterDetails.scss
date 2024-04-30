@@ -1,0 +1,21 @@
+@mixin characterContainer {
+    color: red;
+}
+
+@mixin characterInfo{
+    margin-bottom: 10px;
+}
+
+@mixin characterInfo_label{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+@mixin chracterInfo_value{
+    font-style: italic;
+}
+
+@mixin characterContainer_link{
+    color: blue;
+    text-decoration: underline;
+}

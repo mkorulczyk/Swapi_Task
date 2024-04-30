@@ -11,11 +11,8 @@
 @mixin characterInfo {
     margin-bottom: 10px;
 
-    &:hover {
-        color: red;
-    }
-
     &-label {
+        color: blue;
         font-weight: bold;
         margin-right: 5px;
     }

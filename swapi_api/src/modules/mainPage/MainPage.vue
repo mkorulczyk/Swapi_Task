@@ -1,8 +1,8 @@
 <template>
-    <characterDetails/>
+    <character-details/>
 </template>
 
 <script lang="ts" setup>
-import characterDetails from '../characterDetails/CharacterDetails.vue';
+import CharacterDetails from '../characterDetails/CharacterDetails.vue';
 
 </script>

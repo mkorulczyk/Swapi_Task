@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import AppHeader from '../Layout/componets/AppHeader.vue'
-import AppFooter from '../Layout/componets/AppFooter.vue'
+import AppHeader from './componets/AppHeader.vue'
+import AppFooter from './componets/AppFooter.vue'
 
 </script>

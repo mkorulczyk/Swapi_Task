@@ -1,48 +1,48 @@
 <template>
     <div :class="style.characterContainer">
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Imię: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.name || null }}</span>
+            <span :class="style['characterInfo_label']">Imię: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.name || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Rok urodzenia: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.birth_year || null }}</span>
+            <span :class="style['characterInfo_label']">Rok urodzenia: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.birth_year || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Płeć: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.gender || null }}</span>
+            <span :class="style['characterInfo_label']">Płeć: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.gender || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Kolor włosów: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.hair_color || null }}</span>
+            <span :class="style['characterInfo_label']">Kolor włosów: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.hair_color || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Kolor skóry: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.skin_color || null }}</span>
+            <span :class="style['characterInfo_label']">Kolor skóry: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.skin_color || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Kolor oczu: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.eye_color || null }}</span>
+            <span :class="style['characterInfo_label']">Kolor oczu: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.eye_color || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Wzrost postaci: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.height || null }}</span>
+            <span :class="style['characterInfo_label']">Wzrost postaci: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.height || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Waga postaci: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.mass || null }}</span>
+            <span :class="style['characterInfo_label']">Waga postaci: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.mass || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Data stworzenia: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.created || null }}</span>
+            <span :class="style['characterInfo_label']">Data stworzenia: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.created || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Data modyfikacji: </span>
-            <span :class="style['characterInfo-value']">{{ fetchCharater?.edited || null }}</span>
+            <span :class="style['characterInfo_label']">Data modyfikacji: </span>
+            <span :class="style['characterInfo_value']">{{ fetchCharater?.edited || null }}</span>
         </div>
         <div :class="style.characterInfo">
-            <span :class="style['characterInfo-label']">Link do postaci: </span>
-            <span :class="[style['characterInfo-value'], style['characterInfo_link']]">{{ fetchCharater?.url || null }}</span>
+            <span :class="style['characterInfo_label']">Link do postaci: </span>
+            <span :class="[style['characterInfo_value'], style['characterInfo_link']]">{{ fetchCharater?.url || null }}</span>
         </div>
     </div>
 </template>
